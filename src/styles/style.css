@@ -71,7 +71,7 @@ h3 {
 	font-size: 34px;
 }
 
-section {
+.section {
 	padding: 100px 0;
 	margin: 0 auto;
 	width: 1110px;
@@ -136,4 +136,27 @@ section {
 	padding: 12px 24px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.media-content {
+	text-align: center;
+}
+
+.media-content__title {
+	margin-bottom: 30px;
+}
+
+.media-content__text {
+	margin-bottom: 30px;
+}
+
+.text {
+	font-family: 'Open Sans';
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--color-dark);
+}
+
+.video {
+	filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
