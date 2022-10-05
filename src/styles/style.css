@@ -48,6 +48,8 @@ a {
 }
 
 body {
+  width: 100vw;
+
   color: var(--color-dark);
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -89,23 +91,49 @@ h3 {
 }
 
 .size-small {
-  margin: 100px 0 20px 0;
+  margin: 100px 0 20px;
   padding: 5px 0 5px 10px;
-  font-family: 'Open Sans', sans-serif;
+
   font-weight: 700;
-  background-color: var(--color-brown);
   font-size: 14px;
+  font-family: "Open Sans", sans-serif;
   line-height: 17px;
   text-transform: uppercase;
+}
+
+.dark-opacity {
+  color: var(--color-dark-opacity);
+}
+
+.white-opacity {
+  color: var(--color-white-opacity);
+}
+
+.color-white {
   color: var(--color-white);
+}
+
+.color-brown {
+  color: var(--color-brown);
 }
 
 .orange {
   color: var(--color-main);
 }
 
-.dark-opacity-text {
-  color: var(--color-dark-opacity);
+.background-brown {
+  background-color: var(--color-brown);
+}
+
+.background-white {
+  background-color: var(--color-white);
+}
+
+.background-light {
+  background-color: var(--color-light);
+}
+
+.head-title {
   font-size: 24px;
   line-height: 29px;
 }
@@ -144,10 +172,6 @@ h3 {
 
 .card:hover .info-text {
   color: var(--color-white);
-}
-
-.color-light {
-  background-color: var(--color-light);
 }
 
 .header {
@@ -299,9 +323,31 @@ h3 {
   display: flex;
   gap: 30px;
 }
+
 .tail-right {
   flex: 1 1 50%;
 }
+
 .tail-left {
   flex: 1 1 50%;
+}
+
+.optimization {
+  position: relative;
+}
+
+.optimization::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  content: "";
 }
