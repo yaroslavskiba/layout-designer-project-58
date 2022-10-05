@@ -101,6 +101,11 @@ h3 {
   text-transform: uppercase;
 }
 
+.head-title {
+  font-size: 24px;
+  line-height: 29px;
+}
+
 .dark-opacity {
   color: var(--color-dark-opacity);
 }
@@ -132,10 +137,8 @@ h3 {
 .background-light {
   background-color: var(--color-light);
 }
-
-.head-title {
-  font-size: 24px;
-  line-height: 29px;
+.background-dark {
+  background-color: var(--color-main-dark);
 }
 
 .card {
@@ -258,8 +261,6 @@ h3 {
 
 .nav {
   margin-top: -200px;
-
-  background-color: var(--color-main-dark);
 }
 
 .navigation-block-link {
@@ -330,4 +331,83 @@ h3 {
 
 .tail-left {
   flex: 1 1 50%;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  padding: 55px;
+  padding-right: 0;
+  width: calc(50% - 15px);
+}
+
+.footer-form {
+  padding: 55px;
+  padding-left: 0;
+  width: calc(50% - 15px);
+}
+
+.form-container {
+  display: flex;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.form-email {
+  font-size: 13.1px;
+  line-height: 160%;
+  display: block;
+  padding: 15px;
+  height: 50px;
+  border: none;
+  flex-grow: 1;
+}
+
+.form-btn {
+  width: 70px;
+  height: 50px;
+  border: none;
+}
+
+.form-btn::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/send.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.form-link {
+  text-decoration: underline;
+  color: var(--color-white);
+}
+
+.form-conditions {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-copyrights {
+  margin-bottom: 16px;
+}
+
+.footer-link {
+  color: var(--color-blue);
+  margin-bottom: 16px;
 }
