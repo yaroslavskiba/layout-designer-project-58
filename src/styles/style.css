@@ -81,6 +81,19 @@ h3 {
   color: var(--color-main);
 }
 
+.card {
+  background-color: var(--color-white);
+	padding: 24px;
+}
+
+.number {
+	display: inline-block;
+  margin-bottom: 40px;
+	font-size: 60px;
+	line-height: 1;
+	font-family: Neucha;
+}
+
 .color-light {
   background-color: var(--color-light);
 }
@@ -167,3 +180,32 @@ h3 {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
+.nav {
+	background-color: var(--color-main-dark);
+	margin-top: -200px;
+}
+#navigation {
+}
+.navigation__block-link {
+	margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.navigation__title {
+	font-size: 52px;
+	line-height: 120%;
+	font-family: Neucha;
+	color: var(--color-white);
+}
+.navigation__item {
+}
+.navigation-item {
+	flex: 0 0 350px;
+}
+.navigation-item__num {
+}
+.navigation-item__info {
+}
+.info-text {
+}
