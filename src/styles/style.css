@@ -84,7 +84,20 @@ h3 {
 
 .size-h1 {
   margin-bottom: 30px;
+
   font-size: 72px;
+}
+
+.size-small {
+  margin: 100px 0 20px 0;
+  padding: 5px 0 5px 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  background-color: var(--color-brown);
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: var(--color-white);
 }
 
 .orange {
@@ -92,9 +105,9 @@ h3 {
 }
 
 .dark-opacity-text {
+  color: var(--color-dark-opacity);
   font-size: 24px;
   line-height: 29px;
-  color: var(--color-dark-opacity);
 }
 
 .card {
@@ -248,18 +261,20 @@ h3 {
 }
 
 .block-text {
-  font-family: Neucha, sans-serif;
   font-size: 34px;
+  font-family: Neucha, sans-serif;
   line-height: 41px;
 }
 
 .head {
-  gap: 30px;
   display: flex;
+  gap: 30px;
 }
+
 .effect {
   position: relative;
 }
+
 .effect::before {
   position: absolute;
   top: 0;
@@ -275,8 +290,18 @@ h3 {
 
   content: "";
 }
+
 .head-image {
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
-.block-info {
+
+.tail {
+  display: flex;
+  gap: 30px;
+}
+.tail-right {
+  flex: 1 1 50%;
+}
+.tail-left {
+  flex: 1 1 50%;
 }
