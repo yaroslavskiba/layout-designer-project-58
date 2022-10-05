@@ -42,6 +42,11 @@
   padding: 0;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 body {
   color: var(--color-dark);
   font-size: 16px;
@@ -82,16 +87,39 @@ h3 {
 }
 
 .card {
+  padding: 24px;
+
   background-color: var(--color-white);
-	padding: 24px;
+	cursor: pointer;
+}
+
+.card:hover {
+	background-color: var(--color-main);
+}
+
+.orange-hover {
+	color: var(--color-main);
+}
+
+.card:hover .orange-hover {
+	color: var(--color-main-dark);
 }
 
 .number {
-	display: inline-block;
+  display: inline-block;
   margin-bottom: 40px;
-	font-size: 60px;
-	line-height: 1;
-	font-family: Neucha;
+
+  font-size: 60px;
+  font-family: Neucha;
+  line-height: 1;
+}
+
+.card:hover .number {
+	color: var(--color-white);
+}
+
+.card:hover .info-text {
+	color: var(--color-white);
 }
 
 .color-light {
@@ -181,31 +209,28 @@ h3 {
 }
 
 .nav {
-	background-color: var(--color-main-dark);
-	margin-top: -200px;
+  margin-top: -200px;
+
+  background-color: var(--color-main-dark);
 }
-#navigation {
-}
+
 .navigation__block-link {
-	margin-top: 100px;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 100px;
 }
+
 .navigation__title {
-	font-size: 52px;
-	line-height: 120%;
-	font-family: Neucha;
-	color: var(--color-white);
+	display: inline-block;
+  color: var(--color-white);
+  font-size: 52px;
+  font-family: Neucha;
+  line-height: 120%;
+	margin-bottom: 16px;
 }
-.navigation__item {
-}
+
 .navigation-item {
+	display: inline-block;
 	flex: 0 0 350px;
-}
-.navigation-item__num {
-}
-.navigation-item__info {
-}
-.info-text {
 }
